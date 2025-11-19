@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  background-color: #2e2e38;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 100px;
+  grid-template-areas:
+    "header header header"
+    "sidebar content1 content1"
+    "sidebar content2 content3"
+    "footer footer footer";
+  gap: 10px;
+  width: 100%;
+  height: 100vh;  
+  padding: 10px;
+}
+
+h1{
+    font-family: 'Fascinate', cursive;
+    font-size: 55px;
+    margin: 0;
+    padding: 20px 0;
+    color: darkorchid;
+}
+h2{
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 26px;
+    margin: 0;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    color: rgb(96, 7, 97);
+}
+
+h3{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 28px;
+    margin: 0;
+    padding: 5px 0;
+    color: darkblue;
+    opacity: 0%;
+}
+h3:hover{
+    color: purple;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    opacity: 100%;
+}
+.header{
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+
+text-align: center;
+
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: aquamarine;
+    display: flex;
+   
+     
+
+}
+.content1 {
+    grid-area: content1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+   background-color: aquamarine;
+   padding: 10px;
+   
+}
+   .content1 img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(4px 6px 8px black);
+
+    transform: rotate(10deg) scale(.75);
+   
+   }
+.content1 img:hover {
+   transform: scale(1.1);
+    transition: transform 0.3s ease;
+    
+   }
+
+
+.content2 {
+    grid-area: content2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+   background-color: aquamarine;
+   padding: 10px;
+
+}
+
+.content2 img {
+    max-width: 100%;
+    height: auto;
+    filter: sepia(80%);
+    
+   }  
+   .content2 img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+   }
+.content3 {
+    grid-area: content3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: aquamarine;
+    padding: 10px;
+   
+   
+}
+
+.content3 img {
+    max-width: 100%;
+    height: auto;
+    filter: hue-rotate(120deg);
+    
+}
+.content3 img:hover {
+    transform: scale(.5);
+    transition: transform 0.3s ease;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightcoral;
+   animation-name: changeColors;
+  animation-duration: 1s;
+  animation-delay: 2s;
+
+
+}
+.footer:hover {
+background-color: lightcoral;
+   animation-name: changeColors;
+   animation-iteration-count: infinite; 
+   animation-delay: 1s;
+   transform: scale(1.5);
+    transition: transform 0.3s ease;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes changeColors {
+  from { background-color: rgb(20, 180, 92);  }
+  to   { background-color: rgb(22, 33, 189); }
+}
+
+.fascinate-regular {
+  font-family: "Fascinate", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ribeye-marrow-regular {
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
