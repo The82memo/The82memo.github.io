@@ -1,0 +1,164 @@
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #af79f2; 
+    color: #333;
+}
+h1{
+
+    font-size: 40px;
+    text-align: center;
+    color: #390861;
+}
+p{
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+color: #390861;
+}
+
+.navbar {
+     position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 20px;
+    background: #ff9de2; 
+    border-bottom: 4px solid #ff6f91; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: #ff6f91;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.navbar a:hover {
+    background: #ff3d6d;
+    transform: translateY(-3px);
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #261a23, #a8187a, #97e1ff);
+    color: white;
+}
+
+header h1 {
+    color: #ff3d6d;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+.vault-logo {
+    display: block;
+    margin: 40px auto 0 auto;
+    width: 150px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+   
+}
+
+.vault-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}   
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+
+.card {
+    background: rgb(59, 2, 51);
+    border-radius: 20px;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.25);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h2 {
+    text-align: center;
+    color: #ff6f91;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+#practice {
+    background: #ffe5f1;  
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#labs {
+    background: #e7faff; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#assignments {
+    background: #fff9d6; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.back {
+    padding: 15px;
+}
+
+.back a {
+    background: #ff9de2;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.back a:hover {
+    background: #ff6f91;
+}
+footer {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background: #ffb5e8;
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    border-top: 4px solid #ff6f91;
+}
+
+
+
